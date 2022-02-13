@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        <div id="tool-tip"></div>
+        <input id="test" />
+        <input type="submit">
+    </form>
+
+    <script>
+        $("#test").focusin(function() {
+    $("#tool-tip").show();
+}).focusout(function () {
+    $("#tool-tip").hide();
+});
+    </script>
+</body>
+</html>
